@@ -1,13 +1,16 @@
 #!/bin/bash
 
-# name of csv-file converter.
+# Created date: 2020/04/19
+# Updated date: 2021/05/04
+# This code changes the file-name in the current directory from XXX.csv to i.csv. (i=1,2,3,...)
 
-###################### declaration
+
+###################### Declaration
 beforeFiles=()
 afterFiles=()
 target_dir="./*"
 
-###################### pick up the csv-files in the target directory.
+###################### Pick up the csv-files in the target directory.
 for filepath in ${target_dir}; do
   if [ -f ${filepath} ] ; then
     # pickup csv.
